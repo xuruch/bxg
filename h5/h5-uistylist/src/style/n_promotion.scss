@@ -1,0 +1,227 @@
+// 弹窗
+.PopupBox{
+    // display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;left:0;
+    background:rgba(0,0,0,.6);
+    z-index:1100;
+    .picBox{
+        width: 561px;
+        height: 945px;
+        background:url(../assets/images/n_promotion/popup/bg_pic.png) no-repeat center center;
+        background-size:100% 100%;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        .off{
+            width: 60px;
+            height: 60px;
+            background:url(../assets/images/n_promotion/popup/off.png) no-repeat center center;
+            background-size:100% 100%;
+            position: absolute;
+            top:85px;
+            right:15px;
+        }
+        .tit1{
+            margin-top:120px;
+            text-align: center;
+            letter-spacing:5px;
+            font-size: 36px;
+            color:#fff;
+            span{
+                font-weight:bold;
+                vertical-align:middle;
+            }
+            img{
+                width: 120px;
+                height: 40px;
+                vertical-align:middle;
+                display: none;
+            }
+        }
+        .tit2{
+            margin-top: 22px;
+            img{
+                width:267px;
+                height:64px;
+                vertical-align:middle;
+            }
+            span{
+                font-size:80px;
+                color:#ffeb0d;
+                font-weight:bold;
+                letter-spacing:2px;
+                vertical-align:middle;
+                position: relative;
+                margin-left:8px;
+                i{
+                    position: absolute;
+                    font-size:66px;
+                    right:-68px;
+                    top:13px;
+                }
+            }
+        }
+        .tit3{
+            margin: 22px auto 0;
+            text-align: center;
+            span{
+                display: inline-block;
+                height:38px;
+                line-height: 37px;
+                padding:0 30px;
+                color:#ffffff;
+                border:1.5px solid #fff;
+                border-radius: 19px;
+                font-size:29px;
+                letter-spacing:5px;
+            }
+        }
+    }
+}
+
+// 底部悬浮
+.footFixed{
+    // display: none;
+    width: 100%;
+    height: 124px;
+    background:url(../assets/images/n_promotion/bottom/bg.png) no-repeat center center;
+    background-size:100% 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index:1000;
+    .off{
+        width: 38px;
+        height: 38px;
+        background:url(../assets/images/n_promotion/bottom/off.png) no-repeat center center;
+        background-size: 100% 100%;
+        position: absolute;
+        top:-40px;
+        right: 25px;
+    }
+    .main{
+        width:724px;
+        height: 101px;
+        position: relative;
+        margin: 25px 0 0 28px;
+        .tit_pic{
+            width:724px;
+            height: 100px;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .tit_day{
+            width: 106px;
+            height: 34px;
+            position: absolute;
+            top:18px;
+            right:190px;
+            display: none;
+        }
+    }
+}
+
+// 新增一屏
+.addNewBox{
+    margin-top: 45px;
+    // display: none;
+    height: 1200px;
+    background:url(../assets/images/n_promotion/newBox/bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+    .main{
+        .tit{
+            text-align: center;
+            img{
+                width: 670px;
+                height: 170px;
+            }
+        }
+        .line{
+            width:100%;
+            height: 6px;
+            margin-top: 62px;
+            position: relative;
+            background:#ff4f6f;
+            >div{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border:3px solid #fff;
+                background: #d82542;
+                position: absolute;
+                top: -12px;
+                box-sizing: content-box;
+            }
+            div:nth-of-type(1){
+                left: 125px;
+                background: #ffe1b5;
+            }
+            div:nth-of-type(2){
+                left: 360px;
+            }
+            div:nth-of-type(3){
+                right: 125px;
+            }
+        }
+        .SceneBox{
+            margin-top: 30px;
+            position: relative;
+            height: 142px;
+            div{
+                position: absolute;
+                img{
+                    width: 198px;
+                    height: 142px;
+                }
+            }
+            div:nth-of-type(1){
+                left: 42px;
+            }
+            div:nth-of-type(2){
+                left: 276px;
+            }
+            div:nth-of-type(3){
+                right: 42px;
+            }
+        }
+        .DiscountBox{
+            width: 669px;
+            height: 470px;
+            background:#ffe1b5;
+            border-radius: 20px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            box-sizing: border-box;
+            .stit{
+                text-align: center;
+                img{
+                    width: 453px;
+                    height: 32px;
+                }
+            }
+            .picBox{
+                width: 608px;
+                height: 370px;
+                margin: 20px auto 0;
+                img{
+                    width: 608px;
+                    height: 370px;
+                }
+            }
+        }
+        .newBox_btn{
+            margin: 40px auto 0;
+            width: 424px;
+            height: 80px;
+            background:url(../assets/images/n_promotion/newBox/btn.png) no-repeat center center;
+            background-size:100% 100%;
+        }
+    }
+}
